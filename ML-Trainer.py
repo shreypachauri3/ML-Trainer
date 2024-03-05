@@ -46,9 +46,14 @@ def main():
             st.info(f"Best model saved as '{saved_model_path}'")
 
             # Provide a link to download the model file
-            st.markdown(
-                f"Download the trained model [here](sandbox:/path/to/{saved_model_path}.pkl)",
-                unsafe_allow_html=True,
+            with open(saved_model_path + ".pkl", "rb") as model_file:
+                model_content = model_file.read()
+
+            st.download_button(
+                label="Download Trained Model",
+                data=model_content,
+                key="download_button",
+                help="Click to download the trained model",
             )
 
 if __name__ == "__main__":
