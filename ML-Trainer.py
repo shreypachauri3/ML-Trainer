@@ -55,6 +55,7 @@ def main():
                 key="download_button",
                 help="Click to download the trained model",
             )
+            st.info(f"To use model chnage the extension to pkl type...")
 
 if __name__ == "__main__":
     main()
