@@ -14,7 +14,7 @@ def load_data(uploaded_file):
     return None
 
 def main():
-    st.title("PyCaret Model Trainer")
+    st.title("Train your model in Few Clicks")
 
     # Upload dataset
     uploaded_file = st.file_uploader("Upload your dataset", type=["csv", "xlsx", "txt"])
@@ -40,7 +40,7 @@ def main():
             st.success("Model training and tuning completed!")
 
             # Save the best model
-            saved_model_path = "pycaret_model"
+            saved_model_path = "pycaret_model.pkl"
             save_model(tuned_model, saved_model_path)
 
             st.info(f"Best model saved as '{saved_model_path}'")

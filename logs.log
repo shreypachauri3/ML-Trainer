@@ -2323,3 +2323,11 @@ Alternately, you can install this by running `pip install pycaret[models]`
                                     transformer=SimpleImputer(strategy='most_frequent'))),
                 ('trained_model', LGBMRegressor(n_jobs=-1, random_state=5621))])
 2024-03-05 09:39:47,766:INFO:save_model() successfully completed......................................
+2024-03-05 10:30:19,010:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-05 10:30:19,010:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-05 10:30:19,010:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-05 10:30:19,010:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
